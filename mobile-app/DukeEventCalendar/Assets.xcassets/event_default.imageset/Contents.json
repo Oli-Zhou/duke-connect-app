@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "featured-event-3-ead7d4058a95fb4804e32619f6e04634.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

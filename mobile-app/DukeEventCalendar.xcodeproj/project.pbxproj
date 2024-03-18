@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F812CE72B1592BB00AAE79F /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F812CE62B1592BB00AAE79F /* EventCard.swift */; };
+		4F812CE92B1592C200AAE79F /* EventCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F812CE82B1592C200AAE79F /* EventCardImage.swift */; };
+		4FBDE9CC2B0480E7008CB150 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDE9CB2B0480E7008CB150 /* Comment.swift */; };
+		4FBDE9D22B097201008CB150 /* EventImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDE9D12B097201008CB150 /* EventImage.swift */; };
+		4FBDE9D62B09747B008CB150 /* SponsorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDE9D52B09747B008CB150 /* SponsorInfo.swift */; };
+		4FBDE9D82B0975FE008CB150 /* Time&Loc&Desc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDE9D72B0975FE008CB150 /* Time&Loc&Desc.swift */; };
+		4FBDE9DA2B0BACB9008CB150 /* FloatingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDE9D92B0BACB9008CB150 /* FloatingWindow.swift */; };
+		9C1AD6FC2B047B2B00B3647A /* TagRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1AD6FB2B047B2B00B3647A /* TagRowsView.swift */; };
+		9C1C7A602B22967B0069E26D /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1C7A5F2B22967B0069E26D /* UserAvatar.swift */; };
+		9C29077B2B0058230027B7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C29077A2B0058230027B7F3 /* Assets.xcassets */; };
+		9C29077E2B0058230027B7F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C29077D2B0058230027B7F3 /* Preview Assets.xcassets */; };
+		9C2907922B0058230027B7F3 /* DukeEventCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907912B0058230027B7F3 /* DukeEventCalendarUITests.swift */; };
+		9C2907942B0058230027B7F3 /* DukeEventCalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907932B0058230027B7F3 /* DukeEventCalendarUITestsLaunchTests.swift */; };
+		9C2907A12B00588C0027B7F3 /* DukeEventCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907A02B00588C0027B7F3 /* DukeEventCalendarApp.swift */; };
+		9C2907CA2B00594B0027B7F3 /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907B82B00594B0027B7F3 /* GroupDetailView.swift */; };
+		9C2907CB2B00594B0027B7F3 /* GroupEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907B92B00594B0027B7F3 /* GroupEventList.swift */; };
+		9C2907CC2B00594B0027B7F3 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907BB2B00594B0027B7F3 /* MainPageView.swift */; };
+		9C2907CD2B00594B0027B7F3 /* FilterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907BC2B00594B0027B7F3 /* FilterPageView.swift */; };
+		9C2907CE2B00594B0027B7F3 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907BD2B00594B0027B7F3 /* EventRowView.swift */; };
+		9C2907CF2B00594B0027B7F3 /* FollowingGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907BF2B00594B0027B7F3 /* FollowingGroups.swift */; };
+		9C2907D02B00594B0027B7F3 /* InterestedEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C02B00594B0027B7F3 /* InterestedEvents.swift */; };
+		9C2907D12B00594B0027B7F3 /* singleComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C22B00594B0027B7F3 /* singleComment.swift */; };
+		9C2907D22B00594B0027B7F3 /* singleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C32B00594B0027B7F3 /* singleImage.swift */; };
+		9C2907D32B00594B0027B7F3 /* newComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C42B00594B0027B7F3 /* newComment.swift */; };
+		9C2907D42B00594B0027B7F3 /* commentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C52B00594B0027B7F3 /* commentList.swift */; };
+		9C2907D62B00594B0027B7F3 /* EventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C72B00594B0027B7F3 /* EventEditView.swift */; };
+		9C2907D72B00594B0027B7F3 /* eventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C82B00594B0027B7F3 /* eventDetail.swift */; };
+		9C2907D82B00594B0027B7F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907C92B00594B0027B7F3 /* ContentView.swift */; };
+		9C2907DD2B00595D0027B7F3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907DA2B00595D0027B7F3 /* DataModel.swift */; };
+		9C2907DE2B00595D0027B7F3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907DB2B00595D0027B7F3 /* Event.swift */; };
+		9C2907DF2B00595D0027B7F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907DC2B00595D0027B7F3 /* User.swift */; };
+		9C2907E22B00596B0027B7F3 /* sample_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C2907E12B00596B0027B7F3 /* sample_5.json */; };
+		9C2907E72B0059750027B7F3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907E42B0059750027B7F3 /* Utilities.swift */; };
+		9C2907E82B0059750027B7F3 /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907E52B0059750027B7F3 /* utility.swift */; };
+		9C2907E92B0059750027B7F3 /* WebPageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907E62B0059750027B7F3 /* WebPageLoader.swift */; };
+		9C2907EB2B006DDA0027B7F3 /* sample_90.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C2907EA2B006DDA0027B7F3 /* sample_90.json */; };
+		9C2907F02B006E630027B7F3 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 9C2907EF2B006E630027B7F3 /* SwiftSoup */; };
+		9C2907F72B0083C60027B7F3 /* DukeEventCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907F62B0083C60027B7F3 /* DukeEventCalendarTests.swift */; };
+		9C2907FA2B02F8AC0027B7F3 /* iOSToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907F92B02F8AC0027B7F3 /* iOSToggle.swift */; };
+		9C2907FC2B0321870027B7F3 /* CategoryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907FB2B0321870027B7F3 /* CategoryTag.swift */; };
+		9C2907FE2B03290A0027B7F3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2907FD2B03290A0027B7F3 /* Theme.swift */; };
+		9C341C8B2B116112006B0897 /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C341C8A2B116112006B0897 /* LogInPage.swift */; };
+		9C9976242B03E7EC00ABB1DE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9976232B03E7EC00ABB1DE /* SearchBarView.swift */; };
+		9C9976262B0418DC00ABB1DE /* TagRowsDeletableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9976252B0418DC00ABB1DE /* TagRowsDeletableView.swift */; };
+		9C9976282B0443DB00ABB1DE /* shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9976272B0443DB00ABB1DE /* shake.swift */; };
+		9C99762A2B045AF900ABB1DE /* CategoryTagDeletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9976292B045AF900ABB1DE /* CategoryTagDeletable.swift */; };
+		9CA43FC82B1698D900FD5663 /* EventCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA43FC72B1698D900FD5663 /* EventCarouselView.swift */; };
+		9CA43FCA2B16B5F100FD5663 /* ImagePagingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA43FC92B16B5F100FD5663 /* ImagePagingControl.swift */; };
+		9CACAA7C2B032D9100B29C6B /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CACAA7B2B032D9100B29C6B /* Tags.swift */; };
+		9CACAA7E2B0335FE00B29C6B /* TagRowsAddableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CACAA7D2B0335FE00B29C6B /* TagRowsAddableView.swift */; };
+		9CD3DDA62B1F956D00437628 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3DDA52B1F956D00437628 /* LocalNotification.swift */; };
+		9CD3DDA92B1FDE5B00437628 /* NotificationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3DDA82B1FDE5B00437628 /* NotificationRowView.swift */; };
+		9CEADDA12B203609004BECA9 /* PickablePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEADDA02B203609004BECA9 /* PickablePhotoView.swift */; };
+		9CEB6F0E2B12691F009044C3 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEB6F0D2B12691F009044C3 /* ProfilePage.swift */; };
+		9CEC2BB52B0972060053BD8A /* GroupTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC2BB42B0972060053BD8A /* GroupTag.swift */; };
+		9CEC2BB72B09816B0053BD8A /* GroupTagDeletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC2BB62B09816B0053BD8A /* GroupTagDeletable.swift */; };
+		B635CEBF2B0FA8AA004944F6 /* FetchServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B635CEBE2B0FA8AA004944F6 /* FetchServer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C2907842B0058230027B7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C29076B2B0058220027B7F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C2907722B0058220027B7F3;
+			remoteInfo = DukeEventCalendar;
+		};
+		9C29078E2B0058230027B7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C29076B2B0058220027B7F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C2907722B0058220027B7F3;
+			remoteInfo = DukeEventCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F812CE62B1592BB00AAE79F /* EventCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCard.swift; sourceTree = "<group>"; };
+		4F812CE82B1592C200AAE79F /* EventCardImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCardImage.swift; sourceTree = "<group>"; };
+		4FBDE9CB2B0480E7008CB150 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		4FBDE9D12B097201008CB150 /* EventImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImage.swift; sourceTree = "<group>"; };
+		4FBDE9D52B09747B008CB150 /* SponsorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorInfo.swift; sourceTree = "<group>"; };
+		4FBDE9D72B0975FE008CB150 /* Time&Loc&Desc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time&Loc&Desc.swift"; sourceTree = "<group>"; };
+		4FBDE9D92B0BACB9008CB150 /* FloatingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindow.swift; sourceTree = "<group>"; };
+		9C1AD6FB2B047B2B00B3647A /* TagRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRowsView.swift; sourceTree = "<group>"; };
+		9C1C7A5F2B22967B0069E26D /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
+		9C2907732B0058220027B7F3 /* DukeEventCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DukeEventCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C29077A2B0058230027B7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C29077D2B0058230027B7F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C2907832B0058230027B7F3 /* DukeEventCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DukeEventCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C29078D2B0058230027B7F3 /* DukeEventCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DukeEventCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2907912B0058230027B7F3 /* DukeEventCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DukeEventCalendarUITests.swift; sourceTree = "<group>"; };
+		9C2907932B0058230027B7F3 /* DukeEventCalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DukeEventCalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C2907A02B00588C0027B7F3 /* DukeEventCalendarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DukeEventCalendarApp.swift; path = "../../new-bee/DukeEventCalendar/DukeEventCalendarApp.swift"; sourceTree = "<group>"; };
+		9C2907B82B00594B0027B7F3 /* GroupDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		9C2907B92B00594B0027B7F3 /* GroupEventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupEventList.swift; sourceTree = "<group>"; };
+		9C2907BB2B00594B0027B7F3 /* MainPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		9C2907BC2B00594B0027B7F3 /* FilterPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterPageView.swift; sourceTree = "<group>"; };
+		9C2907BD2B00594B0027B7F3 /* EventRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		9C2907BF2B00594B0027B7F3 /* FollowingGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingGroups.swift; sourceTree = "<group>"; };
+		9C2907C02B00594B0027B7F3 /* InterestedEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestedEvents.swift; sourceTree = "<group>"; };
+		9C2907C22B00594B0027B7F3 /* singleComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleComment.swift; sourceTree = "<group>"; };
+		9C2907C32B00594B0027B7F3 /* singleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleImage.swift; sourceTree = "<group>"; };
+		9C2907C42B00594B0027B7F3 /* newComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newComment.swift; sourceTree = "<group>"; };
+		9C2907C52B00594B0027B7F3 /* commentList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentList.swift; sourceTree = "<group>"; };
+		9C2907C72B00594B0027B7F3 /* EventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditView.swift; sourceTree = "<group>"; };
+		9C2907C82B00594B0027B7F3 /* eventDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventDetail.swift; sourceTree = "<group>"; };
+		9C2907C92B00594B0027B7F3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C2907DA2B00595D0027B7F3 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		9C2907DB2B00595D0027B7F3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9C2907DC2B00595D0027B7F3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9C2907E12B00596B0027B7F3 /* sample_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_5.json; sourceTree = "<group>"; };
+		9C2907E42B0059750027B7F3 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9C2907E52B0059750027B7F3 /* utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utility.swift; sourceTree = "<group>"; };
+		9C2907E62B0059750027B7F3 /* WebPageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageLoader.swift; sourceTree = "<group>"; };
+		9C2907EA2B006DDA0027B7F3 /* sample_90.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_90.json; sourceTree = "<group>"; };
+		9C2907F62B0083C60027B7F3 /* DukeEventCalendarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DukeEventCalendarTests.swift; sourceTree = "<group>"; };
+		9C2907F92B02F8AC0027B7F3 /* iOSToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSToggle.swift; sourceTree = "<group>"; };
+		9C2907FB2B0321870027B7F3 /* CategoryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTag.swift; sourceTree = "<group>"; };
+		9C2907FD2B03290A0027B7F3 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9C341C8A2B116112006B0897 /* LogInPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		9C9976232B03E7EC00ABB1DE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		9C9976252B0418DC00ABB1DE /* TagRowsDeletableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRowsDeletableView.swift; sourceTree = "<group>"; };
+		9C9976272B0443DB00ABB1DE /* shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shake.swift; sourceTree = "<group>"; };
+		9C9976292B045AF900ABB1DE /* CategoryTagDeletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagDeletable.swift; sourceTree = "<group>"; };
+		9CA43FC72B1698D900FD5663 /* EventCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCarouselView.swift; sourceTree = "<group>"; };
+		9CA43FC92B16B5F100FD5663 /* ImagePagingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePagingControl.swift; sourceTree = "<group>"; };
+		9CACAA7B2B032D9100B29C6B /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		9CACAA7D2B0335FE00B29C6B /* TagRowsAddableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRowsAddableView.swift; sourceTree = "<group>"; };
+		9CD3DDA52B1F956D00437628 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		9CD3DDA82B1FDE5B00437628 /* NotificationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRowView.swift; sourceTree = "<group>"; };
+		9CEADDA02B203609004BECA9 /* PickablePhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickablePhotoView.swift; sourceTree = "<group>"; };
+		9CEB6F0D2B12691F009044C3 /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		9CEC2BB42B0972060053BD8A /* GroupTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTag.swift; sourceTree = "<group>"; };
+		9CEC2BB62B09816B0053BD8A /* GroupTagDeletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTagDeletable.swift; sourceTree = "<group>"; };
+		9CEC2BB82B0990160053BD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B635CEBE2B0FA8AA004944F6 /* FetchServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchServer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C2907702B0058220027B7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2907F02B006E630027B7F3 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C2907802B0058230027B7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C29078A2B0058230027B7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C29076A2B0058220027B7F3 = {
+			isa = PBXGroup;
+			children = (
+				9C2907752B0058220027B7F3 /* DukeEventCalendar */,
+				9C2907862B0058230027B7F3 /* DukeEventCalendarTests */,
+				9C2907902B0058230027B7F3 /* DukeEventCalendarUITests */,
+				9C2907742B0058220027B7F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C2907742B0058220027B7F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907732B0058220027B7F3 /* DukeEventCalendar.app */,
+				9C2907832B0058230027B7F3 /* DukeEventCalendarTests.xctest */,
+				9C29078D2B0058230027B7F3 /* DukeEventCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C2907752B0058220027B7F3 /* DukeEventCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC2BB82B0990160053BD8A /* Info.plist */,
+				9C2907A02B00588C0027B7F3 /* DukeEventCalendarApp.swift */,
+				9C2907E32B0059750027B7F3 /* Utilities */,
+				9C2907E02B00596B0027B7F3 /* SampleData */,
+				9C2907D92B00595D0027B7F3 /* Model */,
+				9C2907B62B00594B0027B7F3 /* View */,
+				9C29077A2B0058230027B7F3 /* Assets.xcassets */,
+				9C29077C2B0058230027B7F3 /* Preview Content */,
+			);
+			path = DukeEventCalendar;
+			sourceTree = "<group>";
+		};
+		9C29077C2B0058230027B7F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9C29077D2B0058230027B7F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C2907862B0058230027B7F3 /* DukeEventCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907EA2B006DDA0027B7F3 /* sample_90.json */,
+				9C2907F62B0083C60027B7F3 /* DukeEventCalendarTests.swift */,
+			);
+			path = DukeEventCalendarTests;
+			sourceTree = "<group>";
+		};
+		9C2907902B0058230027B7F3 /* DukeEventCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907912B0058230027B7F3 /* DukeEventCalendarUITests.swift */,
+				9C2907932B0058230027B7F3 /* DukeEventCalendarUITestsLaunchTests.swift */,
+			);
+			path = DukeEventCalendarUITests;
+			sourceTree = "<group>";
+		};
+		9C2907B62B00594B0027B7F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907C92B00594B0027B7F3 /* ContentView.swift */,
+				9CD3DDA72B1FDD9900437628 /* Profile */,
+				9C2907B72B00594B0027B7F3 /* GroupDetail */,
+				9C2907BA2B00594B0027B7F3 /* MainPage */,
+				9C2907BE2B00594B0027B7F3 /* Interested & Following */,
+				9C2907C12B00594B0027B7F3 /* eventDetail */,
+				9C2907F82B02F8750027B7F3 /* HelperView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C2907B72B00594B0027B7F3 /* GroupDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907B82B00594B0027B7F3 /* GroupDetailView.swift */,
+				9C2907B92B00594B0027B7F3 /* GroupEventList.swift */,
+			);
+			path = GroupDetail;
+			sourceTree = "<group>";
+		};
+		9C2907BA2B00594B0027B7F3 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907BB2B00594B0027B7F3 /* MainPageView.swift */,
+				9C2907BC2B00594B0027B7F3 /* FilterPageView.swift */,
+				9C2907BD2B00594B0027B7F3 /* EventRowView.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		9C2907BE2B00594B0027B7F3 /* Interested & Following */ = {
+			isa = PBXGroup;
+			children = (
+				4F812CE62B1592BB00AAE79F /* EventCard.swift */,
+				4F812CE82B1592C200AAE79F /* EventCardImage.swift */,
+				9C2907BF2B00594B0027B7F3 /* FollowingGroups.swift */,
+				9C2907C02B00594B0027B7F3 /* InterestedEvents.swift */,
+				9CA43FC72B1698D900FD5663 /* EventCarouselView.swift */,
+				9CA43FC92B16B5F100FD5663 /* ImagePagingControl.swift */,
+			);
+			path = "Interested & Following";
+			sourceTree = "<group>";
+		};
+		9C2907C12B00594B0027B7F3 /* eventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907C22B00594B0027B7F3 /* singleComment.swift */,
+				9C2907C32B00594B0027B7F3 /* singleImage.swift */,
+				9C2907C42B00594B0027B7F3 /* newComment.swift */,
+				9C2907C52B00594B0027B7F3 /* commentList.swift */,
+				9C2907C72B00594B0027B7F3 /* EventEditView.swift */,
+				9C2907C82B00594B0027B7F3 /* eventDetail.swift */,
+				4FBDE9D72B0975FE008CB150 /* Time&Loc&Desc.swift */,
+				4FBDE9D52B09747B008CB150 /* SponsorInfo.swift */,
+			);
+			path = eventDetail;
+			sourceTree = "<group>";
+		};
+		9C2907D92B00595D0027B7F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907DA2B00595D0027B7F3 /* DataModel.swift */,
+				9C2907DB2B00595D0027B7F3 /* Event.swift */,
+				9C2907DC2B00595D0027B7F3 /* User.swift */,
+				9C2907FD2B03290A0027B7F3 /* Theme.swift */,
+				9CACAA7B2B032D9100B29C6B /* Tags.swift */,
+				4FBDE9CB2B0480E7008CB150 /* Comment.swift */,
+				9CD3DDA52B1F956D00437628 /* LocalNotification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C2907E02B00596B0027B7F3 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907E12B00596B0027B7F3 /* sample_5.json */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		9C2907E32B0059750027B7F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9C2907E42B0059750027B7F3 /* Utilities.swift */,
+				9C2907E52B0059750027B7F3 /* utility.swift */,
+				9C2907E62B0059750027B7F3 /* WebPageLoader.swift */,
+				B635CEBE2B0FA8AA004944F6 /* FetchServer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9C2907F82B02F8750027B7F3 /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				9CEADDA02B203609004BECA9 /* PickablePhotoView.swift */,
+				9C2907F92B02F8AC0027B7F3 /* iOSToggle.swift */,
+				9C1AD6FB2B047B2B00B3647A /* TagRowsView.swift */,
+				9CACAA7D2B0335FE00B29C6B /* TagRowsAddableView.swift */,
+				9C9976252B0418DC00ABB1DE /* TagRowsDeletableView.swift */,
+				9C2907FB2B0321870027B7F3 /* CategoryTag.swift */,
+				9C9976232B03E7EC00ABB1DE /* SearchBarView.swift */,
+				9C9976272B0443DB00ABB1DE /* shake.swift */,
+				9C9976292B045AF900ABB1DE /* CategoryTagDeletable.swift */,
+				4FBDE9D12B097201008CB150 /* EventImage.swift */,
+				4FBDE9D92B0BACB9008CB150 /* FloatingWindow.swift */,
+				9CEC2BB42B0972060053BD8A /* GroupTag.swift */,
+				9CEC2BB62B09816B0053BD8A /* GroupTagDeletable.swift */,
+				9C1C7A5F2B22967B0069E26D /* UserAvatar.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		9CD3DDA72B1FDD9900437628 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9CEB6F0D2B12691F009044C3 /* ProfilePage.swift */,
+				9C341C8A2B116112006B0897 /* LogInPage.swift */,
+				9CD3DDA82B1FDE5B00437628 /* NotificationRowView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C2907722B0058220027B7F3 /* DukeEventCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C2907972B0058230027B7F3 /* Build configuration list for PBXNativeTarget "DukeEventCalendar" */;
+			buildPhases = (
+				9C29076F2B0058220027B7F3 /* Sources */,
+				9C2907702B0058220027B7F3 /* Frameworks */,
+				9C2907712B0058220027B7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DukeEventCalendar;
+			packageProductDependencies = (
+				9C2907EF2B006E630027B7F3 /* SwiftSoup */,
+			);
+			productName = DukeEventCalendar;
+			productReference = 9C2907732B0058220027B7F3 /* DukeEventCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C2907822B0058230027B7F3 /* DukeEventCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C29079A2B0058230027B7F3 /* Build configuration list for PBXNativeTarget "DukeEventCalendarTests" */;
+			buildPhases = (
+				9C29077F2B0058230027B7F3 /* Sources */,
+				9C2907802B0058230027B7F3 /* Frameworks */,
+				9C2907812B0058230027B7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C2907852B0058230027B7F3 /* PBXTargetDependency */,
+			);
+			name = DukeEventCalendarTests;
+			productName = DukeEventCalendarTests;
+			productReference = 9C2907832B0058230027B7F3 /* DukeEventCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C29078C2B0058230027B7F3 /* DukeEventCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C29079D2B0058230027B7F3 /* Build configuration list for PBXNativeTarget "DukeEventCalendarUITests" */;
+			buildPhases = (
+				9C2907892B0058230027B7F3 /* Sources */,
+				9C29078A2B0058230027B7F3 /* Frameworks */,
+				9C29078B2B0058230027B7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C29078F2B0058230027B7F3 /* PBXTargetDependency */,
+			);
+			name = DukeEventCalendarUITests;
+			productName = DukeEventCalendarUITests;
+			productReference = 9C29078D2B0058230027B7F3 /* DukeEventCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C29076B2B0058220027B7F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9C2907722B0058220027B7F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					9C2907822B0058230027B7F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 9C2907722B0058220027B7F3;
+					};
+					9C29078C2B0058230027B7F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 9C2907722B0058220027B7F3;
+					};
+				};
+			};
+			buildConfigurationList = 9C29076E2B0058220027B7F3 /* Build configuration list for PBXProject "DukeEventCalendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C29076A2B0058220027B7F3;
+			packageReferences = (
+				9C2907EE2B006E630027B7F3 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 9C2907742B0058220027B7F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C2907722B0058220027B7F3 /* DukeEventCalendar */,
+				9C2907822B0058230027B7F3 /* DukeEventCalendarTests */,
+				9C29078C2B0058230027B7F3 /* DukeEventCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C2907712B0058220027B7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2907E22B00596B0027B7F3 /* sample_5.json in Resources */,
+				9C29077E2B0058230027B7F3 /* Preview Assets.xcassets in Resources */,
+				9C29077B2B0058230027B7F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C2907812B0058230027B7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2907EB2B006DDA0027B7F3 /* sample_90.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C29078B2B0058230027B7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C29076F2B0058220027B7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C341C8B2B116112006B0897 /* LogInPage.swift in Sources */,
+				9CA43FC82B1698D900FD5663 /* EventCarouselView.swift in Sources */,
+				9CEADDA12B203609004BECA9 /* PickablePhotoView.swift in Sources */,
+				9C2907CE2B00594B0027B7F3 /* EventRowView.swift in Sources */,
+				9CA43FCA2B16B5F100FD5663 /* ImagePagingControl.swift in Sources */,
+				9CD3DDA62B1F956D00437628 /* LocalNotification.swift in Sources */,
+				9C2907D32B00594B0027B7F3 /* newComment.swift in Sources */,
+				4FBDE9D62B09747B008CB150 /* SponsorInfo.swift in Sources */,
+				9CACAA7E2B0335FE00B29C6B /* TagRowsAddableView.swift in Sources */,
+				9C2907D82B00594B0027B7F3 /* ContentView.swift in Sources */,
+				9CACAA7C2B032D9100B29C6B /* Tags.swift in Sources */,
+				9C2907CB2B00594B0027B7F3 /* GroupEventList.swift in Sources */,
+				9C1C7A602B22967B0069E26D /* UserAvatar.swift in Sources */,
+				9C2907E92B0059750027B7F3 /* WebPageLoader.swift in Sources */,
+				9C2907FA2B02F8AC0027B7F3 /* iOSToggle.swift in Sources */,
+				9CD3DDA92B1FDE5B00437628 /* NotificationRowView.swift in Sources */,
+				9C2907D72B00594B0027B7F3 /* eventDetail.swift in Sources */,
+				9CEC2BB52B0972060053BD8A /* GroupTag.swift in Sources */,
+				9C9976262B0418DC00ABB1DE /* TagRowsDeletableView.swift in Sources */,
+				9C2907D42B00594B0027B7F3 /* commentList.swift in Sources */,
+				9C99762A2B045AF900ABB1DE /* CategoryTagDeletable.swift in Sources */,
+				9C2907E82B0059750027B7F3 /* utility.swift in Sources */,
+				4F812CE72B1592BB00AAE79F /* EventCard.swift in Sources */,
+				9CEB6F0E2B12691F009044C3 /* ProfilePage.swift in Sources */,
+				9C2907FE2B03290A0027B7F3 /* Theme.swift in Sources */,
+				9C1AD6FC2B047B2B00B3647A /* TagRowsView.swift in Sources */,
+				9C2907A12B00588C0027B7F3 /* DukeEventCalendarApp.swift in Sources */,
+				9C9976282B0443DB00ABB1DE /* shake.swift in Sources */,
+				9C2907D12B00594B0027B7F3 /* singleComment.swift in Sources */,
+				9C2907CD2B00594B0027B7F3 /* FilterPageView.swift in Sources */,
+				4FBDE9D22B097201008CB150 /* EventImage.swift in Sources */,
+				9C2907FC2B0321870027B7F3 /* CategoryTag.swift in Sources */,
+				4F812CE92B1592C200AAE79F /* EventCardImage.swift in Sources */,
+				9C2907DE2B00595D0027B7F3 /* Event.swift in Sources */,
+				9C2907D22B00594B0027B7F3 /* singleImage.swift in Sources */,
+				9CEC2BB72B09816B0053BD8A /* GroupTagDeletable.swift in Sources */,
+				9C2907D62B00594B0027B7F3 /* EventEditView.swift in Sources */,
+				B635CEBF2B0FA8AA004944F6 /* FetchServer.swift in Sources */,
+				9C9976242B03E7EC00ABB1DE /* SearchBarView.swift in Sources */,
+				9C2907CF2B00594B0027B7F3 /* FollowingGroups.swift in Sources */,
+				4FBDE9DA2B0BACB9008CB150 /* FloatingWindow.swift in Sources */,
+				9C2907D02B00594B0027B7F3 /* InterestedEvents.swift in Sources */,
+				9C2907DD2B00595D0027B7F3 /* DataModel.swift in Sources */,
+				4FBDE9CC2B0480E7008CB150 /* Comment.swift in Sources */,
+				4FBDE9D82B0975FE008CB150 /* Time&Loc&Desc.swift in Sources */,
+				9C2907CC2B00594B0027B7F3 /* MainPageView.swift in Sources */,
+				9C2907CA2B00594B0027B7F3 /* GroupDetailView.swift in Sources */,
+				9C2907E72B0059750027B7F3 /* Utilities.swift in Sources */,
+				9C2907DF2B00595D0027B7F3 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C29077F2B0058230027B7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2907F72B0083C60027B7F3 /* DukeEventCalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C2907892B0058230027B7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2907942B0058230027B7F3 /* DukeEventCalendarUITestsLaunchTests.swift in Sources */,
+				9C2907922B0058230027B7F3 /* DukeEventCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C2907852B0058230027B7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C2907722B0058220027B7F3 /* DukeEventCalendar */;
+			targetProxy = 9C2907842B0058230027B7F3 /* PBXContainerItemProxy */;
+		};
+		9C29078F2B0058230027B7F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C2907722B0058220027B7F3 /* DukeEventCalendar */;
+			targetProxy = 9C29078E2B0058230027B7F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9C2907952B0058230027B7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C2907962B0058230027B7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C2907982B0058230027B7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DukeEventCalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = U6J58C8CJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DukeEventCalendar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.newbee.DukeEventCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C2907992B0058230027B7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DukeEventCalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = U6J58C8CJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DukeEventCalendar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.newbee.DukeEventCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C29079B2B0058230027B7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.newbee.DukeEventCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DukeEventCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DukeEventCalendar";
+			};
+			name = Debug;
+		};
+		9C29079C2B0058230027B7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.newbee.DukeEventCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DukeEventCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DukeEventCalendar";
+			};
+			name = Release;
+		};
+		9C29079E2B0058230027B7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.newbee.DukeEventCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DukeEventCalendar;
+			};
+			name = Debug;
+		};
+		9C29079F2B0058230027B7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.newbee.DukeEventCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DukeEventCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C29076E2B0058220027B7F3 /* Build configuration list for PBXProject "DukeEventCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C2907952B0058230027B7F3 /* Debug */,
+				9C2907962B0058230027B7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C2907972B0058230027B7F3 /* Build configuration list for PBXNativeTarget "DukeEventCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C2907982B0058230027B7F3 /* Debug */,
+				9C2907992B0058230027B7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C29079A2B0058230027B7F3 /* Build configuration list for PBXNativeTarget "DukeEventCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C29079B2B0058230027B7F3 /* Debug */,
+				9C29079C2B0058230027B7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C29079D2B0058230027B7F3 /* Build configuration list for PBXNativeTarget "DukeEventCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C29079E2B0058230027B7F3 /* Debug */,
+				9C29079F2B0058230027B7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C2907EE2B006E630027B7F3 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C2907EF2B006E630027B7F3 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C2907EE2B006E630027B7F3 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9C29076B2B0058220027B7F3 /* Project object */;
+}
