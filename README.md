@@ -10,11 +10,11 @@
 - Pull-down to refresh
 - Press right-top button to filter the events by category / sponsor(group) / time.
  
-![alt text](https://github.com/Oli-Zhou/duke-connect-app/tree/main/mobile-app/ReadmeImg/refresh.png?ref_type=heads){width=250}
+![alt text](https://github.com/Oli-Zhou/duke-connect-app/blob/main/mobile-app/ReadmeImg/refresh.png?raw=true){width=250}
 - On filter page, category could be saved.
 - Remove the filter tag by long-pressing it and press the cross
 
-![alt text](https://github.com/Oli-Zhou/duke-connect-app/tree/main/mobile-app/ReadmeImg/filterpage.jpeg?ref_type=heads){width=250}
+![alt text](https://github.com/Oli-Zhou/duke-connect-app/blob/main/mobile-app/ReadmeImg/filterpage.jpeg?raw=true){width=250}
 
 ## Event details
 - Check detailed information, some with registration page or map page if the API provides these information
